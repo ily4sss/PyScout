@@ -14,3 +14,11 @@ def search_log(file, word, prints):
         if word in i and "sshd" in i:
             count += 1
     return f"{prints} {count}"
+
+attempts_set = {
+    "Accepted publickey",
+    "Accepted password",
+    "Failed password",
+    "Failed publickey",
+    "authentication failure"
+}
