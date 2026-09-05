@@ -10,7 +10,7 @@ def analyze_file(pathFile):
             total_lines += 1
         print(f"lines: {total_lines}")
         print(f"total characters: {len(data)}")
-        print("------Word dictionary-------")
+        print("------- Word dictionary -------")
         history_duplc = set()
         for i in list_words:
             dict_total = 0
