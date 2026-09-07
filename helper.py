@@ -22,3 +22,12 @@ attempts_set = {
     "Failed publickey",
     "authentication failure"
 }
+failed_attempts = {
+    "Accepted publickey",
+    "Accepted password"
+}
+accept_attempts = {
+    "Failed password",
+    "Failed publickey",
+    "authentication failure"
+}

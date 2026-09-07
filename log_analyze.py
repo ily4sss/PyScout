@@ -28,7 +28,9 @@ def analyze_logs(pathFile):
         print(prompt.rstrip(", "))
         file.seek(0)
         data = file.readlines()
+        status_ip = {}
         ip_dict = {}
+        print("--------------------- IP attempts -------------------------")
         for ips in ip_duplc:
             count = 0
             for line in data:
@@ -36,8 +38,46 @@ def analyze_logs(pathFile):
                     count += 1
             ip_dict[ips] = count
             print(f"IP [{ips}] : {count} attempts")
+        sus_ip = set()
+        print("--------- failed -----------")
+        for ips in ip_duplc:
+            count = 0
+            for line in data:
+                if ips in line and any(attempt in line for attempt in helper.failed_attempts):
+                    count += 1
+                    status_ip.setdefault(ips, {"failed" : 0 , "accept": 0})
+                    status_ip[ips]["failed"] = count
+                if count > 10:
+                    sus_ip.add(ips)
+            print(f"Failed attempts per IP [{ips}] : {count}")
+        print("--------- Successful -----------")
+        for ips in ip_duplc:
+            count = 0
+            for line in data:
+                if ips in line and any(attempt in line for attempt in helper.accept_attempts):
+                    count += 1
+                    status_ip[ips]["accept"] = count
+            print(f"Successful attempts per IP [{ips}] : {count}")
         
-        print(f"Most active IP: {max(ip_dict, key=ip_dict.get)}") 
+        print("--------- Suspicious -----------")
+        
+        prompt = "Suspicious IPs :"
+        for ip in sus_ip:
+            prompt += ip + ", "
+        print (prompt.rstrip(", "))
+        
+        print("--------- Active -----------")
+        
+        print(f"Most active IP: {max(ip_dict, key=ip_dict.get)}")
+        count = 0
+        for ip in ip_dict:
+             count += 1
+        
+        print("--------- Unique -----------")
+        
+        print(f"Unique IP count : {count}")
+        
+        print("--------------------- SSH Users -------------------------")
         
         file.seek(0)
         sep = "session opened for user "
@@ -53,6 +93,9 @@ def analyze_logs(pathFile):
                     continue
                 usr_duplc.add(ip)
                 prompt_usr += ip + ", "
+                
+        print(prompt_usr.rstrip(", "))
+        print("--------- User attempts -----------")
         for usrs in usr_duplc:
             count = 0
             for line in data:
@@ -60,6 +103,30 @@ def analyze_logs(pathFile):
                     count += 1
             usr_dict[usrs] = count
             print(f"User [{usrs}]: {count} attempts")
-                    
-        print(prompt_usr.rstrip(", "))
         
+        print("--------- Most Targeted Users  -----------")
+        
+        print(f"Most targeted username : {max(usr_dict, key=usr_dict.get)}")
+        count = 0
+        
+        print("--------- Unique -----------")
+        
+        for usr in usr_dict.keys():
+            count += 1
+        
+        print(f"Unique connected users : {count}")
+        
+        print("--------------------- Ip investigating -------------------------")
+        ip = input("Enter an IP  search for its logs (format example: 8-8-8-8):")
+        
+        if ip in ip_duplc:
+            for ips in ip_dict:
+                if ips == ip:
+                    print(f"Attempts :{ip_dict.get(ips, 0)}")
+            if ip in sus_ip:
+                print("Suspicious IP")
+            if ip in status_ip:
+                print(f"Failed attempts [{ip}] : {status_ip[ip]["failed"]}")
+                print(f"Successful attempts [{ip}] : {status_ip[ip]["accept"]}")
+        print("----------------------------------------------")
+                
