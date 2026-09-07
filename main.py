@@ -3,7 +3,7 @@ import sys_info
 import analyze_file
 import log_analyze
 
-choice = int(input(helper.Interface()))
+choice = int(input(helper.interface()))
 
 match choice:
     case 1:

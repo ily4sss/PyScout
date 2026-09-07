@@ -28,15 +28,21 @@ def analyze_logs(pathFile):
         print(prompt.rstrip(", "))
         file.seek(0)
         data = file.readlines()
+        ip_dict = {}
         for ips in ip_duplc:
             count = 0
             for line in data:
                 if ips in line and any(attempt in line for attempt in helper.attempts_set):
                     count += 1
+            ip_dict[ips] = count
             print(f"IP [{ips}] : {count} attempts")
+        
+        print(f"Most active IP: {max(ip_dict, key=ip_dict.get)}") 
+        
         file.seek(0)
         sep = "session opened for user "
         usr_duplc = set()
+        usr_dict = {}
         prompt_usr = "SSH connected users: "
         for i in file:
             if sep in i and "sshd" in i:
@@ -47,12 +53,12 @@ def analyze_logs(pathFile):
                     continue
                 usr_duplc.add(ip)
                 prompt_usr += ip + ", "
-        print("----------user :", usr_duplc)
         for usrs in usr_duplc:
             count = 0
             for line in data:
                 if usrs in line and any(attempt in line for attempt in helper.attempts_set):
                     count += 1
+            usr_dict[usrs] = count
             print(f"User [{usrs}]: {count} attempts")
                     
         print(prompt_usr.rstrip(", "))

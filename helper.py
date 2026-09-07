@@ -1,4 +1,4 @@
-def Interface():
+def interface():
     return """========================
 PyScout
 ========================
