@@ -4,7 +4,7 @@ PyScout
 ========================
 1. System informations
 2. Analyze a text file
-3. Analyze a log file
+3. Analyze an SSH log file
 choose: """
 
 def search_log(file, word, prints):

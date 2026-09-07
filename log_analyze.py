@@ -47,5 +47,13 @@ def analyze_logs(pathFile):
                     continue
                 usr_duplc.add(ip)
                 prompt_usr += ip + ", "
+        print("----------user :", usr_duplc)
+        for usrs in usr_duplc:
+            count = 0
+            for line in data:
+                if usrs in line and any(attempt in line for attempt in helper.attempts_set):
+                    count += 1
+            print(f"User [{usrs}]: {count} attempts")
+                    
         print(prompt_usr.rstrip(", "))
         
