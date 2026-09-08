@@ -13,4 +13,4 @@ match choice:
         analyze_file.analyze_file(pathFile)
     case 3:
         #pathFile = input("Write the file name or path: ")
-        log_analyze.analyze_logs("auth.log.txt")
+        log_analyze.analyze_logs("test.txt")
