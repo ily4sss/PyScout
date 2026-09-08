@@ -7,12 +7,6 @@ PyScout
 3. Analyze an SSH log file
 choose: """
 
-def investigate_interface():
-    return """============ Data investigating ============
-1. IPs search 
-2. Users search
-choose: """
-
 def search_log(file, word, prints):
     count = 0
     file.seek(0)
