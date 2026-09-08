@@ -19,7 +19,6 @@ def analyze_logs(pathFile):
         prompt = "Source IP addresses: "
         
         for i in file:
-            
             if sep in i and "sshd" in i:
                 start_i = i.find(sep) + len(sep)
                 end_i = i.find(" ", start_i)
@@ -28,7 +27,8 @@ def analyze_logs(pathFile):
                 if ip in ip_duplc:
                     continue
                 ip_duplc.add(ip)
-                prompt += ", "
+                prompt += ip + ", "
+
         print(prompt.rstrip(", "))
         
         file.seek(0)
@@ -55,7 +55,7 @@ def analyze_logs(pathFile):
                     date_end = line.find(" ip-")
                     date_str = datetime.now().strftime("%Y") + " " + line[:date_end] if date_end != -1 else ""
                     date_obj = datetime.strptime(date_str, "%Y %b %d %H:%M:%S")
-                    date.setdefault(ips, []).append(date_obj)
+                    date.setdefault(ips, []).append([date_obj, "failed"])
                     
                     status_ip[ips]["failed"] = count
                 if count > 10:
@@ -75,12 +75,10 @@ def analyze_logs(pathFile):
                     date_end = line.find(" ip-")
                     date_str = datetime.now().strftime("%Y") + " " + line[:date_end] if date_end != -1 else ""
                     date_obj = datetime.strptime(date_str, "%Y %b %d %H:%M:%S")
-                    date.setdefault(ips, []).append(date_obj)
+                    date.setdefault(ips, []).append([date_obj, "accept"])
                     
             print(f"Successful attempts per IP [{ips}] : {count}")
-        print("----------Date", date)
         print("--------- Suspicious -----------")
-        
         prompt = "Suspicious IPs :"
         for ip in sus_ip:
             prompt += ip + ", "
@@ -149,11 +147,33 @@ def analyze_logs(pathFile):
                     print("------- Dates -------")
                     if ip in date:
                         if date[ip][0] == date[ip][-1]:
-                            print(f"First date of IP [{ip}]: {date[ip][0]}")
+                            print(f"First date of IP [{ip}]: {date[ip][0][0]}")
                             print("No other dates for this IP")
                         else:
-                            print(f"First date of IP [{ip}]: {date[ip][0]}")
-                            print(f"Last date of IP [{ip}]: {date[ip][-1]}")
+                            print(f"First date of IP [{ip}]: {date[ip][0][0]}")
+                            print(f"Last date of IP [{ip}]: {date[ip][-1][0]}")
+                            print(f"Activity duration of IP [{ip}]: {date[ip][-1][0] - date[ip][0][0]}")
+                            right = 1
+                            left = 0
+                            failed_dates = []
+
+                    for event in date[ip]:
+                        if event[1] == "failed":
+                            failed_dates.append(event[0])
+                    left = 0
+                    right = 0
+                    max_failures = 0
+                    short_time = None
+                    while right < len(failed_dates):
+                        while (failed_dates[right] - failed_dates[left]).total_seconds() >= 1800:
+                            left += 1
+                        failures = right - left + 1
+
+                        if failures > max_failures:
+                            max_failures = failures
+                            short_time = failed_dates[right] - failed_dates[left]
+                        right += 1
+                    print(f"{max_failures} failures in {short_time}")
                 print("----------------------------------------------")
             case 2:
                 print("--------------------- User Investigation -------------------------")

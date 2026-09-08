@@ -1,19 +1,315 @@
-Apr  3 07:17:01 ip-10-77-20-248 sshd[25948]: pam_unix(cron:session): session opened for user root by (uid=0)
-Mar 28 12:03:17 ip-10-77-20-248 sshd[23338]: Accepted publickey for ubuntu from 85.245.107.41 port 54989 ssh2: RSA SHA256:Kl8kPGZrTiz7g4FO1hyqHdsSBBb5Fge6NWOobN03XJg
-Apr  3 07:17:01 ip-10-77-20-248 CRON[25948]: pam_unix(cron:session): session closed for user root
-Apr  1 18:22:15 ip-10-77-20-248 sshd[22956]: Invalid user guest from 181.26.186.35
-Mar 29 14:15:41 ip-10-77-20-248 sshd[2414]: Failed password for invalid user pi from 181.25.206.27 port 50378 ssh2
-Apr  1 18:22:15 ip-10-77-43-248 sshd[22956]: Invalid user guest from 181.26.186.35
-Mar 28 12:03:17 ip-10-77-20-248 sshd[23338]: Accepted publickey for ubuntu from 85.245.107.41 port 54989 ssh2: RSA SHA256:Kl8kPGZrTiz7g4FO1hyqHdsSBBb5Fge6NWOobN03XJg
-Apr  1 18:22:15 ip-10-77-20-248 sshd[22956]: Invalid user guest from 181.26.186.35
-Apr  1 19:22:15 ip-10-77-20-248 sshd[22956]: Invalid user guest from 181.26.186.35
-Apr  1 20:22:15 ip-10-77-20-248 sshd[22956]: Invalid user guest from 181.26.186.35
-Apr  1 18:22:17 ip-10-77-20-248 sshd[22956]: Failed password for invalid user guest from 181.26.186.35 port 52379 ssh2
-Apr  1 18:22:17 ip-10-77-20-248 sshd[22956]: Failed password for invalid user guest from 181.26.186.35 port 52379 ssh2
-Apr  1 18:22:15 ip-10-77-20-248 sshd[22956]: Invalid user guest from 181.26.186.35
-Apr  3 07:17:01 ip-10-65-20-248 CRON[25948]: pam_unix(cron:session): session opened for user root by (uid=0)
-Apr  4 04:17:24 ip-10-77-20-248 sshd[8110]: Connection closed by 66.240.236.119 port 53317 [preauth]
-Apr  4 04:17:24 ip-10-77-20-248 sshd[8110]: Connection closed by 66.240.236.119 port 53317 [preauth]
-Mar 29 11:35:20 ip-10-77-20-248 sshd[1361]: Failed publickey for elastic_user_2 from 85.245.107.41 port 50690 ssh2: RSA SHA256:aC2UQe4piBfaFwr2ne0PItnl9AcHqZOYrWjDmqpOzvE
-Mar 29 11:45:20 ip-10-77-20-248 sshd[1361]: Failed publickey for elastic_user_2 from 85.245.107.41 port 50690 ssh2: RSA SHA256:aC2UQe4piBfaFwr2ne0PItnl9AcHqZOYrWjDmqpOzvE
-Apr  4 16:44:55 ip-10-77-20-248 sshd[8671]: pam_unix(sshd:session): session closed for user ubuntu
+Mar 27 13:06:56 ip-10-77-20-248 sshd[1291]: Server listening on 0.0.0.0 port 22.
+Mar 27 13:06:56 ip-10-77-20-248 sshd[1291]: Server listening on :: port 22.
+Mar 27 13:06:56 ip-10-77-20-248 systemd-logind[1118]: Watching system buttons on /dev/input/event0 (Power Button)
+Mar 27 13:06:56 ip-10-77-20-248 systemd-logind[1118]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Mar 27 13:06:56 ip-10-77-20-248 systemd-logind[1118]: New seat seat0.
+Mar 27 13:08:09 ip-10-77-20-248 sshd[1361]: Accepted publickey for ubuntu from 85.245.107.41 port 54259 ssh2: RSA SHA256:Kl8kPGZrTiz7g4FO1hyqHdsSBBb5Fge6NWOobN03XJg
+Mar 27 13:08:09 ip-10-77-20-248 sshd[1361]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Mar 27 13:08:09 ip-10-77-20-248 systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Mar 27 13:08:09 ip-10-77-20-248 systemd-logind[1118]: New session 1 of user ubuntu.
+Mar 27 13:09:37 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-5.2.2-amd64.deb
+Mar 27 13:09:37 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:09:38 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 13:10:08 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-key add -
+Mar 27 13:10:08 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:10:09 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 13:10:14 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-get install apt-transport-https
+Mar 27 13:10:14 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:10:14 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 13:10:18 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/tee -a /etc/apt/sources.list.d/elastic-5.x.list
+Mar 27 13:10:18 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:10:18 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 13:10:24 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-get update
+Mar 27 13:10:24 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:10:28 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 13:10:28 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-get install filebeat
+Mar 27 13:10:28 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:10:33 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 13:10:53 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/sbin/update-rc.d filebeat defaults 95 10
+Mar 27 13:10:53 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:10:53 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 13:11:31 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-get update
+Mar 27 13:11:31 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:11:33 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 13:11:34 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-get update
+Mar 27 13:11:34 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:11:35 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 13:11:35 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-get install packetbeat
+Mar 27 13:11:35 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:11:39 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 13:17:01 ip-10-77-20-248 CRON[2623]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 27 13:17:01 ip-10-77-20-248 CRON[2623]: pam_unix(cron:session): session closed for user root
+Mar 27 13:23:11 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/usr/sbin/update-rc.d packetbeat defaults 95 10
+Mar 27 13:23:11 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:23:11 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 13:25:20 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/usr/bin/vim /etc/packetbeat/packetbeat.yml
+Mar 27 13:25:20 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:28:00 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 13:28:22 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/usr/bin/vim /etc/packetbeat/packetbeat.yml
+Mar 27 13:28:22 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:41:35 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 13:41:39 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/usr/bin/vim /etc/packetbeat/packetbeat.yml
+Mar 27 13:41:39 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:41:49 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 13:42:46 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/usr/bin/vim /etc/packetbeat/packetbeat.yml
+Mar 27 13:42:46 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:42:57 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 13:43:06 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/usr/bin/vim /etc/packetbeat/packetbeat.yml
+Mar 27 13:43:06 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:43:09 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 13:43:14 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/usr/bin/vim /etc/hostname
+Mar 27 13:43:14 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:43:18 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 13:43:21 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/usr/bin/vim /etc/hosts
+Mar 27 13:43:21 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:43:29 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 13:43:33 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/bin/hostname ip-10-77-20-248
+Mar 27 13:43:33 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:43:33 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 13:44:05 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/usr/bin/hostnamectl ip-10-77-20-248
+Mar 27 13:44:05 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:44:05 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 13:44:16 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/usr/bin/hostnamectl set-hostname ip-10-77-20-248
+Mar 27 13:44:16 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:44:16 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 13:44:19 ip-10-77-20-248 sshd[1418]: Received disconnect from 85.245.107.41 port 54259:11: disconnected by user
+Mar 27 13:44:19 ip-10-77-20-248 sshd[1418]: Disconnected from 85.245.107.41 port 54259
+Mar 27 13:44:19 ip-10-77-20-248 sshd[1361]: pam_unix(sshd:session): session closed for user ubuntu
+Mar 27 13:44:19 ip-10-77-20-248 systemd-logind[1118]: Removed session 1.
+Mar 27 13:44:20 ip-10-77-20-248 sshd[2818]: Accepted publickey for ubuntu from 85.245.107.41 port 54866 ssh2: RSA SHA256:Kl8kPGZrTiz7g4FO1hyqHdsSBBb5Fge6NWOobN03XJg
+Mar 27 13:44:20 ip-10-77-20-248 sshd[2818]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Mar 27 13:44:20 ip-10-77-20-248 systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Mar 27 13:44:20 ip-10-77-20-248 systemd-logind[1118]: New session 3 of user ubuntu.
+Mar 27 13:44:29 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/sbin/service packetbeat start
+Mar 27 13:44:29 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 13:44:29 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 14:01:39 ip-10-77-20-248 sshd[2938]: error: maximum authentication attempts exceeded for root from 122.176.37.221 port 37107 ssh2 [preauth]
+Mar 27 14:01:39 ip-10-77-20-248 sshd[2938]: Disconnecting: Too many authentication failures [preauth]
+Mar 27 14:02:16 ip-10-77-20-248 sshd[2856]: Received disconnect from 85.245.107.41 port 54866:11: disconnected by user
+Mar 27 14:02:16 ip-10-77-20-248 sshd[2856]: Disconnected from 85.245.107.41 port 54866
+Mar 27 14:02:16 ip-10-77-20-248 sshd[2818]: pam_unix(sshd:session): session closed for user ubuntu
+Mar 27 14:02:16 ip-10-77-20-248 systemd-logind[1118]: Removed session 3.
+Mar 27 14:04:09 ip-10-77-20-248 sshd[2951]: Bad protocol version identification '' from 85.245.107.41 port 55172
+Mar 27 14:17:01 ip-10-77-20-248 CRON[2952]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 27 14:17:01 ip-10-77-20-248 CRON[2952]: pam_unix(cron:session): session closed for user root
+Mar 27 14:18:36 ip-10-77-20-248 sshd[2955]: Bad protocol version identification '' from 85.245.107.41 port 56709
+Mar 27 14:54:57 ip-10-77-20-248 sshd[2967]: Invalid user support from 95.152.57.58
+Mar 27 14:54:57 ip-10-77-20-248 sshd[2967]: input_userauth_request: invalid user support [preauth]
+Mar 27 14:54:58 ip-10-77-20-248 sshd[2967]: error: maximum authentication attempts exceeded for invalid user support from 95.152.57.58 port 53679 ssh2 [preauth]
+Mar 27 14:54:58 ip-10-77-20-248 sshd[2967]: Disconnecting: Too many authentication failures [preauth]
+Mar 27 15:17:01 ip-10-77-20-248 CRON[2980]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 27 15:17:01 ip-10-77-20-248 CRON[2980]: pam_unix(cron:session): session closed for user root
+Mar 27 15:30:59 ip-10-77-20-248 sshd[2995]: Did not receive identification string from 209.160.24.191
+Mar 27 15:46:53 ip-10-77-20-248 sshd[2996]: error: maximum authentication attempts exceeded for root from 90.144.183.19 port 57648 ssh2 [preauth]
+Mar 27 15:46:53 ip-10-77-20-248 sshd[2996]: Disconnecting: Too many authentication failures [preauth]
+Mar 27 15:48:29 ip-10-77-20-248 sshd[2998]: Accepted publickey for ubuntu from 85.245.107.41 port 57684 ssh2: RSA SHA256:Kl8kPGZrTiz7g4FO1hyqHdsSBBb5Fge6NWOobN03XJg
+Mar 27 15:48:29 ip-10-77-20-248 sshd[2998]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Mar 27 15:48:29 ip-10-77-20-248 systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Mar 27 15:48:29 ip-10-77-20-248 systemd-logind[1118]: New session 6 of user ubuntu.
+Mar 27 15:49:20 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/dpkg -i filebeat-5.3.0-amd64.deb
+Mar 27 15:49:20 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 15:49:21 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 15:59:42 ip-10-77-20-248 sshd[3242]: error: maximum authentication attempts exceeded for root from 186.128.152.44 port 34605 ssh2 [preauth]
+Mar 27 15:59:42 ip-10-77-20-248 sshd[3242]: Disconnecting: Too many authentication failures [preauth]
+Mar 27 16:02:57 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/usr/bin/vim /etc/filebeat/filebeat.yml
+Mar 27 16:02:57 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:03:19 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:04:18 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/usr/bin/vim /etc/filebeat/filebeat.yml
+Mar 27 16:04:18 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:04:29 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:05:03 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=./filebeat -e -setup -modules=system -c /etc/filebeat/filebeat.yml
+Mar 27 16:05:03 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:05:03 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:10:32 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/etc/filebeat ; USER=root ; COMMAND=/usr/bin/vim /etc/filebeat/filebeat.yml
+Mar 27 16:10:32 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:10:46 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:11:05 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/etc/filebeat ; USER=root ; COMMAND=/usr/bin/vim /etc/filebeat/filebeat.yml
+Mar 27 16:11:05 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:12:10 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:12:19 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/etc/filebeat ; USER=root ; COMMAND=/usr/bin/vim /etc/filebeat/filebeat.yml
+Mar 27 16:12:19 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:12:42 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:12:46 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/etc/filebeat ; USER=root ; COMMAND=/usr/bin/vim /etc/filebeat/filebeat.yml
+Mar 27 16:12:46 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:13:46 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:14:29 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/etc/filebeat ; USER=root ; COMMAND=/usr/bin/vim /etc/filebeat/filebeat.yml
+Mar 27 16:14:29 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:14:38 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:14:39 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/etc/filebeat ; USER=root ; COMMAND=/usr/bin/vim /etc/filebeat/filebeat.yml
+Mar 27 16:14:39 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:14:52 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:16:06 ip-10-77-20-248 sshd[3453]: Received disconnect from 218.65.30.53 port 22445:11:  [preauth]
+Mar 27 16:16:06 ip-10-77-20-248 sshd[3453]: Disconnected from 218.65.30.53 port 22445 [preauth]
+Mar 27 16:16:19 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/etc/filebeat ; USER=root ; COMMAND=/usr/bin/vim /etc/filebeat/filebeat.yml
+Mar 27 16:16:19 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:16:27 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:16:33 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/etc/filebeat ; USER=root ; COMMAND=/usr/sbin/service filebeat start
+Mar 27 16:16:33 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:16:34 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:16:42 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/etc/filebeat ; USER=root ; COMMAND=/bin/su
+Mar 27 16:16:42 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:16:42 ip-10-77-20-248 su[3537]: Successful su for root by root
+Mar 27 16:16:42 ip-10-77-20-248 su[3537]: + /dev/pts/0 root:root
+Mar 27 16:16:42 ip-10-77-20-248 su[3537]: pam_unix(su:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:16:42 ip-10-77-20-248 su[3537]: pam_systemd(su:session): Cannot create session: Already running in a session
+Mar 27 16:17:01 ip-10-77-20-248 CRON[3550]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 27 16:17:01 ip-10-77-20-248 CRON[3550]: pam_unix(cron:session): session closed for user root
+Mar 27 16:17:24 ip-10-77-20-248 su[3537]: pam_unix(su:session): session closed for user root
+Mar 27 16:17:24 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:17:29 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/etc/filebeat ; USER=root ; COMMAND=/usr/sbin/service filebeat stop
+Mar 27 16:17:29 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:17:29 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:17:31 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/etc/filebeat ; USER=root ; COMMAND=/usr/sbin/service filebeat start
+Mar 27 16:17:31 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:17:32 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:17:35 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/etc/filebeat ; USER=root ; COMMAND=/bin/su
+Mar 27 16:17:35 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:17:35 ip-10-77-20-248 su[3659]: Successful su for root by root
+Mar 27 16:17:35 ip-10-77-20-248 su[3659]: + /dev/pts/0 root:root
+Mar 27 16:17:35 ip-10-77-20-248 su[3659]: pam_unix(su:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:17:35 ip-10-77-20-248 su[3659]: pam_systemd(su:session): Cannot create session: Already running in a session
+Mar 27 16:23:46 ip-10-77-20-248 sshd[3731]: Received disconnect from 89.97.55.33 port 44947:11: disconnected by user [preauth]
+Mar 27 16:23:46 ip-10-77-20-248 sshd[3731]: Disconnected from 89.97.55.33 port 44947 [preauth]
+Mar 27 16:29:06 ip-10-77-20-248 su[3659]: pam_unix(su:session): session closed for user root
+Mar 27 16:29:06 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:29:09 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/etc/filebeat ; USER=root ; COMMAND=/usr/bin/vim /etc/filebeat/filebeat.yml
+Mar 27 16:29:09 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:30:57 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:31:03 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/etc/filebeat ; USER=root ; COMMAND=/usr/sbin/service filebeat start
+Mar 27 16:31:03 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:31:03 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:31:07 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/etc/filebeat ; USER=root ; COMMAND=/bin/su
+Mar 27 16:31:07 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:31:07 ip-10-77-20-248 su[3985]: Successful su for root by root
+Mar 27 16:31:07 ip-10-77-20-248 su[3985]: + /dev/pts/0 root:root
+Mar 27 16:31:07 ip-10-77-20-248 su[3985]: pam_unix(su:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:31:07 ip-10-77-20-248 su[3985]: pam_systemd(su:session): Cannot create session: Already running in a session
+Mar 27 16:50:03 ip-10-77-20-248 sudo:     root : TTY=pts/0 ; PWD=/usr/share/filebeat/scripts ; USER=root ; COMMAND=/usr/bin/apt-get install zip
+Mar 27 16:50:03 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:50:12 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:51:21 ip-10-77-20-248 su[3985]: pam_unix(su:session): session closed for user root
+Mar 27 16:51:21 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:53:45 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat ; USER=root ; COMMAND=/usr/bin/vim /etc/filebeat/filebeat.yml
+Mar 27 16:53:45 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:53:51 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:54:49 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/etc/filebeat ; USER=root ; COMMAND=/usr/share/filebeat/bin/filebeat -setup system
+Mar 27 16:54:49 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:54:49 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:55:03 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/etc/filebeat ; USER=root ; COMMAND=/usr/share/filebeat/bin/filebeat -setup system -c filebeat.yml
+Mar 27 16:55:03 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:55:03 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:55:23 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/etc/filebeat ; USER=root ; COMMAND=/bin/cp filebeat.template.json /usr/share/filebeat/bin/filebeat.template.json
+Mar 27 16:55:23 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:55:23 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:55:26 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/etc/filebeat ; USER=root ; COMMAND=/usr/share/filebeat/bin/filebeat -setup system -c filebeat.yml
+Mar 27 16:55:26 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:55:26 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:55:56 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/etc/filebeat ; USER=root ; COMMAND=/bin/cp filebeat.template-es2x.json /usr/share/filebeat/bin/
+Mar 27 16:55:56 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:55:56 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:56:00 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/etc/filebeat ; USER=root ; COMMAND=/usr/share/filebeat/bin/filebeat -setup system -c filebeat.yml
+Mar 27 16:56:00 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:56:00 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:56:27 ip-10-77-20-248 sshd[14299]: Received disconnect from 94.177.177.106 port 45905:11: Bye Bye [preauth]
+Mar 27 16:56:27 ip-10-77-20-248 sshd[14299]: Disconnected from 94.177.177.106 port 45905 [preauth]
+Mar 27 16:58:31 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/usr/bin/filebeat.sh -e -modules=system -setup
+Mar 27 16:58:31 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:58:32 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:59:01 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/bin/rm filebeat.template-es2x.json filebeat.template.json
+Mar 27 16:59:01 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:59:01 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:59:27 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=./filebeat -e -modules=system -setup
+Mar 27 16:59:27 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:59:27 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 16:59:47 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/usr/bin/filebeat.sh -e -modules=system -setup
+Mar 27 16:59:47 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 16:59:47 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:02:13 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/usr/bin/filebeat.sh -e -modules=system -setup -E dashboards.url=https://staging.elastic.co/5.3.0-d5b30bd7/downloads/beats/beats-dashboards/beats-dashboards-5.3.0.zip
+Mar 27 17:02:13 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 17:02:14 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:02:46 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/usr/bin/vim /etc/filebeat/filebeat.yml
+Mar 27 17:02:46 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 17:03:36 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:04:12 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/usr/bin/vim /etc/filebeat/filebeat.yml
+Mar 27 17:04:12 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 17:04:26 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:04:29 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/usr/bin/filebeat.sh -e -modules=system -setup -E dashboards.url=https://staging.elastic.co/5.3.0-d5b30bd7/downloads/beats/beats-dashboards/beats-dashboards-5.3.0.zip
+Mar 27 17:04:29 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 17:04:44 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:04:51 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/usr/sbin/service filebeat stop
+Mar 27 17:04:51 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 17:04:51 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:04:53 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/usr/sbin/service filebeat start
+Mar 27 17:04:53 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 17:04:53 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:08:23 ip-10-77-20-248 sshd[3058]: Received disconnect from 85.245.107.41 port 57684:11: disconnected by user
+Mar 27 17:08:23 ip-10-77-20-248 sshd[3058]: Disconnected from 85.245.107.41 port 57684
+Mar 27 17:08:23 ip-10-77-20-248 sshd[2998]: pam_unix(sshd:session): session closed for user ubuntu
+Mar 27 17:08:23 ip-10-77-20-248 systemd-logind[1118]: Removed session 6.
+Mar 27 17:08:34 ip-10-77-20-248 sshd[14514]: Invalid user test from 85.245.107.41
+Mar 27 17:08:34 ip-10-77-20-248 sshd[14514]: input_userauth_request: invalid user test [preauth]
+Mar 27 17:08:34 ip-10-77-20-248 sshd[14514]: Connection closed by 85.245.107.41 port 58980 [preauth]
+Mar 27 17:08:36 ip-10-77-20-248 sshd[14516]: Accepted publickey for ubuntu from 85.245.107.41 port 58981 ssh2: RSA SHA256:Kl8kPGZrTiz7g4FO1hyqHdsSBBb5Fge6NWOobN03XJg
+Mar 27 17:08:36 ip-10-77-20-248 sshd[14516]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Mar 27 17:08:36 ip-10-77-20-248 systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Mar 27 17:08:36 ip-10-77-20-248 systemd-logind[1118]: New session 8 of user ubuntu.
+Mar 27 17:09:26 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/sbin/service filebeat stop
+Mar 27 17:09:26 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 17:09:26 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:10:15 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/bin/rm /var/lib/filebeat/registry
+Mar 27 17:10:15 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 17:10:15 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:12:43 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat/bin ; USER=root ; COMMAND=/usr/bin/filebeat.sh -e -modules=system -setup -E dashboards.url=https://staging.elastic.co/5.3.0-d5b30bd7/downloads/beats/beats-dashboards/beats-dashboards-5.3.0.zip
+Mar 27 17:12:43 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 17:15:41 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:17:01 ip-10-77-20-248 CRON[14648]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 27 17:17:01 ip-10-77-20-248 CRON[14648]: pam_unix(cron:session): session closed for user root
+Mar 27 17:26:16 ip-10-77-20-248 sshd[14655]: Did not receive identification string from 113.108.21.16
+Mar 27 17:26:46 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/dpkg -i filebeat-6.0.0-alpha1-SNAPSHOT-amd64.deb
+Mar 27 17:26:46 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 17:27:33 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:27:57 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/dpkg -i filebeat-6.0.0-alpha1-SNAPSHOT-amd64.deb
+Mar 27 17:27:57 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 17:28:02 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:28:40 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat ; USER=root ; COMMAND=/usr/bin/vim /etc/filebeat/filebeat.yml
+Mar 27 17:28:40 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 17:29:15 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:31:29 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat ; USER=root ; COMMAND=/usr/bin/filebeat.sh -e -modules=system -setup -E dashboards.url=https://beats-nightlies.s3.amazonaws.com/dashboards/beats-dashboards-6.0.0-alpha1-SNAPSHOT.zip
+Mar 27 17:31:29 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 17:31:29 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:31:46 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat ; USER=root ; COMMAND=/bin/chmod go-w /usr/share/filebeat/module/system/auth/manifest.yml
+Mar 27 17:31:46 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 17:31:46 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:31:48 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat ; USER=root ; COMMAND=/usr/bin/filebeat.sh -e -modules=system -setup -E dashboards.url=https://beats-nightlies.s3.amazonaws.com/dashboards/beats-dashboards-6.0.0-alpha1-SNAPSHOT.zip
+Mar 27 17:31:48 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 17:31:48 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:32:01 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat ; USER=root ; COMMAND=/bin/chmod go-w /usr/share/filebeat/module/system/syslog/manifest.yml
+Mar 27 17:32:01 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 17:32:01 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:32:02 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat ; USER=root ; COMMAND=/usr/bin/filebeat.sh -e -modules=system -setup -E dashboards.url=https://beats-nightlies.s3.amazonaws.com/dashboards/beats-dashboards-6.0.0-alpha1-SNAPSHOT.zip
+Mar 27 17:32:02 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 17:32:04 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 18:07:20 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat ; USER=root ; COMMAND=/usr/bin/filebeat.sh -e -modules=system -setup -E dashboards.url=https://beats-nightlies.s3.amazonaws.com/dashboards/beats-dashboards-6.0.0-alpha1-SNAPSHOT.zip
+Mar 27 18:07:20 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 27 18:07:21 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 18:11:17 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/usr/share/filebeat ; USER=root ; COMMAND=/usr/bin/filebeat.sh -e -modules=system -setup -E dashboards.url=https://beats-nightlies.s3.amazonaws.com/dashboards/beats-dashboards-6.0.0-alpha1-SNAPSHOT.zip
+Mar 28 18:16:56 ip-10-77-20-248 sshd[29404]: Invalid user user from 123.115.51.110
+Mar 28 18:16:56 ip-10-77-20-248 sshd[29404]: input_userauth_request: invalid user user [preauth]
+Mar 28 18:16:58 ip-10-77-20-248 sshd[29404]: error: maximum authentication attempts exceeded for invalid user user from 123.115.51.110 port 52143 ssh2 [preauth]
+Mar 28 18:16:58 ip-10-77-20-248 sshd[29404]: Disconnecting: Too many authentication failures [preauth]
+Mar 28 18:17:01 ip-10-77-20-248 CRON[29406]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 28 18:17:01 ip-10-77-20-248 CRON[29406]: pam_unix(cron:session): session closed for user root
+Mar 28 19:00:25 ip-10-77-20-248 sshd[29133]: Received disconnect from 85.245.107.41 port 55779:11: disconnected by user
+Mar 28 19:00:25 ip-10-77-20-248 sshd[29133]: Disconnected from 85.245.107.41 port 55779
+Mar 28 19:00:25 ip-10-77-20-248 sshd[29069]: pam_unix(sshd:session): session closed for user ubuntu
+Mar 28 19:00:25 ip-10-77-20-248 systemd-logind[1118]: Removed session 38.
+Mar 28 19:00:25 ip-10-77-20-248 systemd: pam_unix(systemd-user:session): session closed for user ubuntu
+Mar 28 19:00:30 ip-10-77-20-248 sshd[29442]: Accepted publickey for ubuntu from 85.245.107.41 port 61322 ssh2: RSA SHA256:Kl8kPGZrTiz7g4FO1hyqHdsSBBb5Fge6NWOobN03XJg
+Mar 28 19:00:30 ip-10-77-20-248 sshd[29442]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Mar 28 19:00:30 ip-10-77-20-248 systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Mar 28 19:00:30 ip-10-77-20-248 systemd-logind[1118]: New session 44 of user ubuntu.
+Mar 28 19:01:41 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/vim /etc/ssh/sshd_config
+Mar 28 19:01:41 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 28 19:02:04 ip-10-77-20-248 sudo: pam_unix(sudo:session): session closed for user root
+Mar 28 19:02:28 ip-10-77-20-248 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/sbin/service ssh restart
+Mar 28 19:02:28 ip-10-77-20-248 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
